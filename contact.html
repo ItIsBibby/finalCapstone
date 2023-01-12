@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Teams</title>
+    <link href = "css/styles.css" rel = "stylesheet" type = "text/css">
+</head>
+<body onload="buildCommentsTable()">
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <main>
+        <p>If you've come across one of these teams in the wild, why not tell us about it?</p>
+        <select id="whichTeam">
+            <option value="">--Which team did you  see dance?--</option>
+            <option value="Black Swan">Black Swan</option>
+            <option value="Mabel Gubbins">Mabel Gubbins</option>
+            <option value="Medlock">Medlock</option>
+            <option value="Newcastle Kingsmen">Newcastle Kingsmen</option>
+            <option value="Northgate Rapper">Northgate Rapper</option>
+            <option value="Sheffield Steel Rapper">Sheffield Steel Rapper</option>
+            <option value="Thrales">Thrales</option>
+            <option value="Tower Ravens">Tower Ravens</option>
+            <option value="Whip the Cat">Whip the Cat</option>
+        </select>
+        </br>
+        </br>
+        <form action="/form/submit" method="POST">
+            <label for="comment">What did you think of them?: </label>
+            <textarea type="text" name="comment" id="comment" class="formBox" required></textarea>
+        </form>
+        </br>
+        </br>
+        <select id="verdict">
+            <option value="">--What's the verdict?--</option>
+            <option [ngValue]="true">Good</option>
+            <option [ngValue]="false">Bad</option>
+        </select>
+        </br>
+        <input type="submit" name="submit" value="Submit" onclick="addComment()">
+        </br>
+        </br>
+        <table id="commentsTable">
+            <tr>
+                <th>Team</th>
+                <th>Comment</th>
+                <th>Verdict</th>
+            </tr>
+        </table>
+        </br>
+        </br>
+        <label for="contact">Enter a message to get in touch with us: </label>
+        <textarea type="text" name="contact" id="contact" class="formBox" required></textarea>
+        <input type="submit" name="submit" value="Send" onclick="sendEmail()">
+    </main>
+    <footer>
+        <nav>
+            <p>For more information, check out Rapper Dancing on <a href = "https://en.wikipedia.org/wiki/Rapper_sword">Wikipedia</a>, or at <a href = "https://rapper.org.uk/">Rapper.org.uk</a>.</p>
+            <div>
+                <a href = "index.html">Home</a>
+                <a href = "about.html">About</a>
+                <a href = "teams.html">Teams</a>
+                <a href = "favourites.html">Favourites</a>
+            </div>
+        </nav>
+        <button>Subscribe to our newsletter</button>
+    </footer>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

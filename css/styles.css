@@ -1,0 +1,68 @@
+body {
+    background-color: grey;
+}
+
+header {
+    text-align: center;
+}
+
+#links {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkcyan;
+}
+
+#quote {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+img {
+    max-height: 400px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+table img {
+    max-width: 50vw;
+}
+
+h1 {
+    padding: 10px 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.heart {
+    max-height: 30px;
+}
+
+.verdict {
+    max-height: 30px;
+}
+
+.formBox {
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+}
