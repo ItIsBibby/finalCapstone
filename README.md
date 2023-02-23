@@ -2,6 +2,8 @@
 
 This is a website that gives information on a personal hobby, Rapper. It allows a user to mark favourte teams, and leave comments, and uses DOM manipulation to add the updated information to tables.
 
+This was built as a homework task for a web development bootcamp.
+
 ## Contents
 
 1. Installation
@@ -20,6 +22,9 @@ The Teams page contains a table of Rapper teams. In the right-hand column of eac
 
 The Contact page contains a table of comments relating to teams, which a user can add to using the input boxes. There is also an input box for sending a message to the site, although this currently does not lead anywhere.
 ![contact](https://user-images.githubusercontent.com/104395426/212315402-e61a5348-27c0-4191-89f3-9fcc9eab3318.png)
+
+## Next steps
+It's not the prettiest site, my main priority when creating this was creating an editable table using session storage that manipulates the DOM, so the CSS needs an overhaul.
 
 ## Credits
 Joe Bibby - joseph_bibby@hotmail.co.uk
